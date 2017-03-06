@@ -334,7 +334,6 @@ class SearchAndReplace(bpy.types.Operator):
     bl_description = "replaces parts in the object names"
     bl_options = {'REGISTER', 'UNDO', 'INTERNAL'}
     
-    type = StringProperty()
     
     def execute(self,context):
         wm = context.window_manager
@@ -355,7 +354,6 @@ class ReplaceName(bpy.types.Operator):
     bl_description = "replaces the names of the objects"
     bl_options = {'REGISTER', 'UNDO', 'INTERNAL'}
     
-    type = StringProperty()
     
     def execute(self,context):
         wm = context.window_manager
